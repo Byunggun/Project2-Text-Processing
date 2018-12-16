@@ -130,7 +130,7 @@ def  saveJSON() :
 
 ##
 def csvData01() :
-    global  csvList
+    global  csvList, input_file
     csvList = []
     input_file = "D:\Python\WooJaeNam\DataText\supplier_data.csv"
     filereader = open(input_file, 'r', newline='')
@@ -171,7 +171,7 @@ def csvData01() :
     filereader.close()
 
 def csvData02() :
-    global csvList
+    global csvList, input_file
     csvList = []
     input_file = "D:\Python\WooJaeNam\DataText\CSV\supplier_data.csv"
     filereader = open(input_file, 'r', newline='')
@@ -185,7 +185,7 @@ def csvData02() :
     filereader.close()
 
 def csvData03() :  # 여러개 csv 파일의 행개수 합계 궁금함.
-    global csvList
+    global csvList, input_file
     csvList = []
     dirName = askdirectory()
     # 폴더에서 *.csv 파일 목록만 뽑기
